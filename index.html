@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Dental Baltodano</title>
+
+    <!-- Bootstrap 5.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- Estilos propios -->
+    <link rel="stylesheet" href="style.css">
+
+<link rel="icon" type="image/png" href="img/Logo4.png">
+
+
+
+</head>
+<body class="custom-text">
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-md fixed-top custom-navbar shadow-sm py-2" aria-label="Navegación principal">
+        <div class="container">
+            <a href="#inicio" class="navbar-brand d-flex align-items-center gap-2 fw-bold custom-brand text-decoration-none fs-6">
+                
+                <div class="rounded-3 custom-primary-subtle d-flex align-items-center justify-content-between flex-shrink-0" style="width: 34px; height: 34px;">
+                   
+                    <img src="img/Logo2.png" alt="Logo de la clínica" class="w-auto h-100 "> 
+                
+                </div>
+
+            </a>
+
+            <button class="navbar-toggler border-0 shadow-none p-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbar_enlaces" aria-controls="navbar_enlaces" aria-expanded="false" aria-label="Abrir menú">
+                <i class="fa-solid fa-bars custom-toggler-icon"></i>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbar_enlaces">
+                <div class="navbar-nav gap-md-2">
+                    <a href="#inicio" class="nav-link px-md-3 custom-nav-link">Inicio</a>
+                    <a href="#datos" class="nav-link px-md-3 custom-nav-link">Mis datos</a>
+                    <a href="#ubicacion" class="nav-link px-md-3 custom-nav-link">Ubicación</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+
+        <!-- ================= SECCIÓN: INICIO ================= -->
+        <section id="inicio" class="min-vh-100 d-flex align-items-center justify-content-center text-center position-relative overflow-hidden px-3 custom-section-inicio">
+            <div class="position-relative z-1 w-100 mx-auto" style="max-width: 760px;">
+                
+                <div class=" m-2 mx-auto rounded-4 custom-primary-subtle d-flex align-items-center justify-content-center overflow-hidden shadow-sm" style="width: 150px; height: 150px;">
+                    <img src="img/Logo4.png" alt="Logo de la clínica" class="w-100 h-100 object-fit-cover">
+                </div>
+
+                <span class="custom-primary fw-bold text-uppercase fs-7 tracking-wider">
+                    Bienvenido <span id="nombreusuario"></span>
+                </span>
+
+                <h1 class="mt-3 mb-3 fw-light fs-1 display-5 custom-heading">
+                    Es un placer
+                    <strong class="d-block custom-primary fw-bold mt-0">tenerte aquí.</strong>
+                </h1>
+
+                <p class="mx-auto custom-text-secondary mb-0" style="max-width: 580px; line-height: 1.7;">
+                    Hemos preparado este espacio para que puedas consultar de manera sencilla y segura tu información personal.
+                </p>
+
+                <a href="#datos" class="btn custom-btn-primary rounded-pill px-4 py-3 mt-4 fw-bold shadow-sm">
+                    Ver mi información
+                    <i class="fa-solid fa-arrow-down ms-2"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- ================= SECCIÓN: DATOS ==================== -->
+        <section id="datos" class="min-vh-50 d-flex align-items-center custom-section-datos py-5">
+
+            <div class="container">
+
+                <div class="mb-4 mb-lg-5">
+
+                    <span class="custom-primary fw-bold text-uppercase fs-7 tracking-wider"> Información del paciente </span>
+                    <h2 class="mt-2 mb-1 fw-bold fs-2 custom-heading">Mis datos</h2>
+                    <p class="custom-text-secondary mb-0"> Consulta aquí la información registrada en nuestra clínica. </p>
+
+                </div>
+
+                <div id="datos_usuario_contenedor" class="row row-cols-1 row-cols-md-2 g-3 g-lg-4"></div>
+                <br>
+
+                <div class="tabla-beneficios">
+
+                    <h2>TABLA DE BENEFICIOS</h2>
+
+                    <div class="beneficios-lista">
+
+                        <!-- Valoración general -->
+                        <article class="beneficio-item">
+                            <h3>Valoración general</h3>
+
+                            <div class="beneficio-datos">
+                                <div>
+                                    <span>PRECIO REGULAR</span>
+                                    <strong>C$300</strong>
+                                </div>
+
+                                <div>
+                                    <span>BENEFICIO PDBOPE</span>
+                                    <strong>GRATIS</strong>
+                                </div>
+
+                                <div>
+                                    <span>AHORRO</span>
+                                    <strong>C$300</strong>
+                                </div>
+
+                                <div>
+                                    <span>PRECIO PDBOPE</span>
+                                    <strong>GRATIS</strong>
+                                </div>
+                            </div>
+                        </article>
+
+
+                        <!-- Radiografía -->
+                        <article class="beneficio-item">
+                            <h3>Radiografía</h3>
+
+                            <div class="beneficio-datos">
+                                <div>
+                                    <span>PRECIO REGULAR</span>
+                                    <strong>C$300</strong>
+                                </div>
+
+                                <div>
+                                    <span>BENEFICIO PDBOPE</span>
+                                    <strong>GRATIS</strong>
+                                </div>
+
+                                <div>
+                                    <span>AHORRO</span>
+                                    <strong>C$300</strong>
+                                </div>
+
+                                <div>
+                                    <span>PRECIO PDBOPE</span>
+                                    <strong>GRATIS</strong>
+                                </div>
+                            </div>
+                        </article>
+
+
+                        <!-- Limpieza dental -->
+                        <article class="beneficio-item">
+                            <h3>Limpieza dental</h3>
+
+                            <div class="beneficio-datos">
+                                <div>
+                                    <span>PRECIO REGULAR</span>
+                                    <strong>C$875</strong>
+                                </div>
+
+                                <div>
+                                    <span>BENEFICIO PDBOPE</span>
+                                    <strong>1 GRATIS/año + 40% adicional</strong>
+                                </div>
+
+                                <div>
+                                    <span>AHORRO</span>
+                                    <strong>C$875/C$350</strong>
+                                </div>
+
+                                <div>
+                                    <span>PRECIO PDBOPE</span>
+                                    <strong>C$525*</strong>
+                                </div>
+                            </div>
+                        </article>
+
+
+                        <!-- Restauración de resina -->
+                        <article class="beneficio-item">
+                            <h3>Restauración de resina</h3>
+
+                            <div class="beneficio-datos">
+                                <div>
+                                    <span>PRECIO REGULAR</span>
+                                    <strong>C$875</strong>
+                                </div>
+
+                                <div>
+                                    <span>BENEFICIO PDBOPE</span>
+                                    <strong>30%</strong>
+                                </div>
+
+                                <div>
+                                    <span>AHORRO</span>
+                                    <strong>C$156</strong>
+                                </div>
+
+                                <div>
+                                    <span>PRECIO PDBOPE</span>
+                                    <strong>C$613</strong>
+                                </div>
+                            </div>
+                        </article>
+
+
+                        <!-- Restauración de resina anterior -->
+                        <article class="beneficio-item">
+                            <h3>Restauración de resina anterior</h3>
+
+                            <div class="beneficio-datos">
+                                <div>
+                                    <span>PRECIO REGULAR</span>
+                                    <strong>C$1,000</strong>
+                                </div>
+
+                                <div>
+                                    <span>BENEFICIO PDBOPE</span>
+                                    <strong>20%</strong>
+                                </div>
+
+                                <div>
+                                    <span>AHORRO</span>
+                                    <strong>C$200</strong>
+                                </div>
+
+                                <div>
+                                    <span>PRECIO PDBOPE</span>
+                                    <strong>C$800</strong>
+                                </div>
+                            </div>
+                        </article>
+
+
+                        <!-- Recubrimiento de pulpa -->
+                        <article class="beneficio-item">
+                            <h3>Recubrimiento de pulpa</h3>
+
+                            <div class="beneficio-datos">
+                                <div>
+                                    <span>PRECIO REGULAR</span>
+                                    <strong>C$1,340</strong>
+                                </div>
+
+                                <div>
+                                    <span>BENEFICIO PDBOPE</span>
+                                    <strong>20%</strong>
+                                </div>
+
+                                <div>
+                                    <span>AHORRO</span>
+                                    <strong>C$268</strong>
+                                </div>
+
+                                <div>
+                                    <span>PRECIO PDBOPE</span>
+                                    <strong>C$1,072</strong>
+                                </div>
+                            </div>
+                        </article>
+
+
+                        <!-- Temporales -->
+                        <article class="beneficio-item">
+                            <h3>Temporales</h3>
+
+                            <div class="beneficio-datos">
+                                <div>
+                                    <span>PRECIO REGULAR</span>
+                                    <strong>C$1,110</strong>
+                                </div>
+
+                                <div>
+                                    <span>BENEFICIO PDBOPE</span>
+                                    <strong>20%</strong>
+                                </div>
+
+                                <div>
+                                    <span>AHORRO</span>
+                                    <strong>C$222</strong>
+                                </div>
+
+                                <div>
+                                    <span>PRECIO PDBOPE</span>
+                                    <strong>C$888</strong>
+                                </div>
+                            </div>
+                        </article>
+
+
+                        <!-- Blanqueamiento -->
+                        <article class="beneficio-item">
+                            <h3>Blanqueamiento</h3>
+
+                            <div class="beneficio-datos">
+                                <div>
+                                    <span>PRECIO REGULAR</span>
+                                    <strong>C$4,100</strong>
+                                </div>
+
+                                <div>
+                                    <span>BENEFICIO PDBOPE</span>
+                                    <strong>20%</strong>
+                                </div>
+
+                                <div>
+                                    <span>AHORRO</span>
+                                    <strong>C$820</strong>
+                                </div>
+
+                                <div>
+                                    <span>PRECIO PDBOPE</span>
+                                    <strong>C$3,280</strong>
+                                </div>
+                            </div>
+                        </article>
+
+
+                        <!-- Extracción regular -->
+                        <article class="beneficio-item">
+                            <h3>Extracción regular</h3>
+
+                            <div class="beneficio-datos">
+                                <div>
+                                    <span>PRECIO REGULAR</span>
+                                    <strong>C$700</strong>
+                                </div>
+
+                                <div>
+                                    <span>BENEFICIO PDBOPE</span>
+                                    <strong>20%</strong>
+                                </div>
+
+                                <div>
+                                    <span>AHORRO</span>
+                                    <strong>C$140</strong>
+                                </div>
+
+                                <div>
+                                    <span>PRECIO PDBOPE</span>
+                                    <strong>C$560</strong>
+                                </div>
+                            </div>
+                        </article>
+
+
+                        <!-- Extracción de cordal -->
+                        <article class="beneficio-item">
+                            <h3>Extracción de cordal</h3>
+
+                            <div class="beneficio-datos">
+                                <div>
+                                    <span>PRECIO REGULAR</span>
+                                    <strong>C$1,400</strong>
+                                </div>
+
+                                <div>
+                                    <span>BENEFICIO PDBOPE</span>
+                                    <strong>10%</strong>
+                                </div>
+
+                                <div>
+                                    <span>AHORRO</span>
+                                    <strong>C$140</strong>
+                                </div>
+
+                                <div>
+                                    <span>PRECIO PDBOPE</span>
+                                    <strong>C$1,260</strong>
+                                </div>
+                            </div>
+                        </article>
+
+
+                        <!-- Procedimiento postoperatorio -->
+                        <article class="beneficio-item">
+                            <h3>Procedimiento postoperatorio</h3>
+
+                            <div class="beneficio-datos">
+                                <div>
+                                    <span>PRECIO REGULAR</span>
+                                    <strong>C$400</strong>
+                                </div>
+
+                                <div>
+                                    <span>BENEFICIO PDBOPE</span>
+                                    <strong>GRATIS</strong>
+                                </div>
+
+                                <div>
+                                    <span>AHORRO</span>
+                                    <strong>C$400</strong>
+                                </div>
+
+                                <div>
+                                    <span>PRECIO PDBOPE</span>
+                                    <strong>GRATIS</strong>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+
+                    <br>
+
+                    <!-- NOTA -->
+                    <div class="note">
+                        <span>
+                            Para hacer uso de la limpieza dental gratis, deberá realizarse un procedimiento.
+                            Las limpiezas adicionales tienen 40% de descuento sobre el precio regular de
+                            C$875, quedando en C$525.
+                        </span>
+                    </div>
+
+                </div>
+
+
+                <br><br>
+
+                <div class="ortodoncia-card">
+
+                    <div class="ortodoncia-header">
+                        <h2>ORTODONCIA</h2>
+                    </div>
+
+                    <div class="ortodoncia-contenido">
+
+                        <div class="ortodoncia-planes">
+
+                            <article class="ortodoncia-plan">
+                                <h3>18 meses</h3>
+
+                                <div class="ortodoncia-datos">
+                                    <div>
+                                        <span>PRECIO REGULAR</span>
+                                        <strong>$150 de prima + $40/mes</strong>
+                                    </div>
+
+                                    <div>
+                                        <span>BENEFICIO PDBOPE</span>
+                                        <strong>Sin prima inicial · $49/mes</strong>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="ortodoncia-plan">
+                                <h3>24 meses</h3>
+
+                                <div class="ortodoncia-datos">
+                                    <div>
+                                        <span>PRECIO REGULAR</span>
+                                        <strong>$150 de prima + $30/mes</strong>
+                                    </div>
+
+                                    <div>
+                                        <span>BENEFICIO PDBOPE</span>
+                                        <strong>Sin prima inicial · $39/mes</strong>
+                                    </div>
+                                </div>
+                            </article>
+
+                        </div>
+
+                        <div class="ortodoncia-nota">
+                            <p>
+                                El colaborador no realiza el pago de la prima inicial de $150.
+                                Este valor se incorpora en la mensualidad PDBOPE.
+                                La primera mensualidad se paga al iniciar el tratamiento.
+                                Incluye el kit de ortodoncia y la primera limpieza según las
+                                condiciones establecidas por la clínica.
+                            </p>
+
+                            <p>
+                                Beneficiario en ortodoncia: 50% de descuento sobre la prima normal
+                                y posibilidad de financiamiento mediante Fichosa, sujeto a las
+                                condiciones vigentes.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            
+            
+        </section>
+        <!-- ====================================================== -->
+
+        <!-- ================= SECCIÓN: UBICACIÓN ================= -->
+        <section id="ubicacion" class="min-vh-50 d-flex align-items-center custom-section-ubicacion py-5">
+            <div class="container">
+                <div class="mb-4">
+                    <span class="custom-primary fw-bold text-uppercase fs-7 tracking-wider">
+                        Encuéntranos
+                    </span>
+                    <h2 class="mt-2 mb-1 fw-bold fs-2">Ubicación</h2>
+                    <p class="custom-text-muted mb-0">
+                        Visítanos en nuestras instalaciones o ponte en contacto con nosotros.
+                    </p>
+                </div>
+
+                <div class="row g-4 align-items-center">
+                    <!-- Columna Izquierda: Redes e Info -->
+                    <div class="col-12 col-md-5">
+                        <div class="d-flex align-items-center gap-2 mb-2">
+                            <div class="rounded-2 d-flex align-items-center justify-content-center flex-shrink-0 custom-card-logo-bg" style="width: 32px; height: 32px;">
+                                <img src="img/Logo4.png" alt="Logo" class="w-100 h-100 object-fit-cover rounded-2">
+                            </div>
+                            <strong class="text-truncate">Clínica Dental Baltodano</strong>
+                        </div>
+
+                        <p class="custom-text-muted small mb-3">
+                            Cuidamos tu sonrisa con profesionalismo y confianza.
+                        </p>
+
+                        <div>
+                            <span class="d-block text-uppercase fw-bold mb-2" style="font-size: 0.75rem;">Síguenos</span>
+                            <div id="footer_redes" class="row row-cols-2 g-2">
+                                <!-- Generado dinámicamente -->
+                            </div>
+                        </div>
+                        <br>
+
+                        <div> 
+                            <span class="d-block text-uppercase fw-bold mb-2" style="font-size: 0.65rem;">
+                                WhatsApp de cada sucursal
+                            </span>
+
+                            <div class="row row-cols-1 row-cols-sm-3 g-2">
+
+                                <div class="col con-redes">
+                                    <a href="https://wa.me/50588251631"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="card text-decoration-none border-0 shadow-sm rounded-3 h-100 custom-social-card"
+                                    style="--social-color:#25D366; padding: 5px 8px;">
+
+                                        <div class="card-body d-flex align-items-center gap-2 p-0">
+
+                                            <div class="custom-icon-box d-flex align-items-center justify-content-center flex-shrink-0"
+                                                style="width:28px; height:28px; border-radius:7px;">
+                                                <i class="fa-brands fa-whatsapp custom-social-icon-color"
+                                                style="font-size:14px;"></i>
+                                            </div>
+
+                                            <span class="fw-bold text-truncate custom-social-text-color"
+                                                style="font-size:0.7rem;">
+                                                León
+                                            </span>
+
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col con-redes">
+                                    <a href="https://wa.me/50578059872"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="card text-decoration-none border-0 shadow-sm rounded-3 h-100 custom-social-card"
+                                    style="--social-color:#25D366; padding:5px 8px;">
+
+                                        <div class="card-body d-flex align-items-center gap-2 p-0">
+
+                                            <div class="custom-icon-box d-flex align-items-center justify-content-center flex-shrink-0"
+                                                style="width:28px; height:28px; border-radius:7px;">
+                                                <i class="fa-brands fa-whatsapp custom-social-icon-color"
+                                                style="font-size:14px;"></i>
+                                            </div>
+
+                                            <span class="fw-bold text-truncate custom-social-text-color"
+                                                style="font-size:0.7rem;">
+                                                Chinandega
+                                            </span>
+
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col con-redes">
+                                    <a href="https://wa.me/50589785129"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="card text-decoration-none border-0 shadow-sm rounded-3 h-100 custom-social-card"
+                                    style="--social-color:#25D366; padding:5px 8px;">
+
+                                        <div class="card-body d-flex align-items-center gap-2 p-0">
+
+                                            <div class="custom-icon-box d-flex align-items-center justify-content-center flex-shrink-0"
+                                                style="width:28px; height:28px; border-radius:7px;">
+                                                <i class="fa-brands fa-whatsapp custom-social-icon-color"
+                                                style="font-size:14px;"></i>
+                                            </div>
+
+                                            <span class="fw-bold text-truncate custom-social-text-color"
+                                                style="font-size:0.7rem;">
+                                                Chichigalpa
+                                            </span>
+
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    
+
+                    <!-- Columna Derecha: Datos de Ubicación / Mapa -->
+                    <div class="col-12 col-md-7">
+                        <span class="d-block text-truncate fw-bold mb-2" style="font-size: 1rem;">Detalles de contacto</span>
+                        <div id="ubicacion_datos" class="w-100 shadow rounded-3"> </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <!-- FOOTER GENERAL -->
+    <footer class="custom-footer py-3 text-center">
+        <div class="container">
+            <div class="custom-footer-border pt-3">
+                <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-1" style="font-size: 0.75rem;">
+                    <span>© Todos los derechos reservados.</span>
+                    <span>Atención odontológica profesional Baltodano</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Supabase -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="supabase.js"></script>
+
+    <!-- Aplicación -->
+    <script src="app.js"></script>
+
+
+
+
+    <script>
+        // Cerrar el menú desplegable en dispositivos móviles al hacer clic en un enlace
+        document.querySelectorAll('#navbar_enlaces .nav-link').forEach(enlace => {
+            enlace.addEventListener('click', () => {
+                const navbar = document.getElementById('navbar_enlaces');
+                const collapse = bootstrap.Collapse.getInstance(navbar);
+
+                if (collapse) {
+                    collapse.hide();
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
